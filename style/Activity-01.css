@@ -1,0 +1,17 @@
+#lettersQueContainer {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.lettersQue {
+  font-size: 1.5em;
+  color: wheat;
+  font-weight: bold;
+  /* text-align: center; */
+}

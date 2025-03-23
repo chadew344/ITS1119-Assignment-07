@@ -1,0 +1,39 @@
+section {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.box {
+  width: clamp(50px, 5vw, 100px);
+  height: 50px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+#second-layer {
+  padding: 0 clamp(60px, 5vw, 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#second-layer > div:not(div:last-child) {
+  margin-right: clamp(2px, 5vw, 25px);
+}
+
+section > div:last-child {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  section {
+    width: 92%;
+  }
+}
